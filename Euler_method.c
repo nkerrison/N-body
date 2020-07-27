@@ -10,25 +10,25 @@ typedef struct
 
 vector scale(double a, vector r)
 {
-	vector s = {a*r.x, a*r.y, a*r.z};
+  vector s = {a*r.x, a*r.y, a*r.z};
   return s;
 }
 
 vector add(vector r1, vector r2)
 {
-	vector s = {r1.x+r2.x, r1.y+r2.y, r1.z+r2.z};
+  vector s = {r1.x+r2.x, r1.y+r2.y, r1.z+r2.z};
   return s;
 }
 
 vector subtract(vector r1, vector r2)
 {
-	vector s = {r1.x-r2.x, r1.y-r2.y, r1.z-r2.z};
+  vector s = {r1.x-r2.x, r1.y-r2.y, r1.z-r2.z};
   return s;
 }
 
 double norm(vector r)
 {
-	return sqrt(r.x*r.x + r.y*r.y + r.z*r.z);
+  return sqrt(r.x*r.x + r.y*r.y + r.z*r.z);
 }
 
 vector acceleration(vector r1, vector r2, int m1)
