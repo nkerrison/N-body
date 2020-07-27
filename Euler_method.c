@@ -5,7 +5,7 @@
 
 typedef struct
 {
-	double x, y, z;
+  double x, y, z;
 }vector;
 
 vector scale(double a, vector r)
